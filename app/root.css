@@ -1,0 +1,9 @@
+body {
+  background-image: linear-gradient(
+    110deg,
+    hsl(240deg 96% 11%) 0%,
+    hsl(219deg 47% 16%) 38%,
+    hsl(217deg 25% 18%) 69%,
+    hsl(270deg 23% 17%) 100%
+  );
+}

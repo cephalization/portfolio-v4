@@ -8,6 +8,7 @@ import {
 } from "remix";
 import type { MetaFunction, LinksFunction } from "remix";
 import styles from "./tailwind.css";
+import { useBG } from "./hooks/useBG";
 
 export const meta: MetaFunction = () => {
   return { title: "New Remix App" };
@@ -21,6 +22,8 @@ export const links: LinksFunction = () => {
 };
 
 export default function App() {
+  const backgroundImage = useBG();
+
   return (
     <html lang="en">
       <head>
@@ -29,7 +32,12 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body
+        className="text-gray-400 h-screen w-screen"
+        style={{
+          backgroundImage,
+        }}
+      >
         <Outlet />
         <ScrollRestoration />
         <Scripts />
