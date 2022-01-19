@@ -1,4 +1,8 @@
-# Welcome to Remix!
+# Anthony Powell Portfolio V4
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cdf8d7e6-0ca0-40fb-a9b7-b6ed377ab5ef/deploy-status)](https://app.netlify.com/sites/anthonypowell-v4/deploys)
+
+Using
 
 - [Remix Docs](https://remix.run/docs)
 
