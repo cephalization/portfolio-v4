@@ -4,12 +4,20 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration
+  ScrollRestoration,
 } from "remix";
-import type { MetaFunction } from "remix";
+import type { MetaFunction, LinksFunction } from "remix";
+import styles from "./tailwind.css";
 
 export const meta: MetaFunction = () => {
   return { title: "New Remix App" };
+};
+
+export const links: LinksFunction = () => {
+  return [
+    { rel: "stylesheet", href: styles },
+    { rel: "stylesheet", href: "https://rsms.me/inter/inter.css" },
+  ];
 };
 
 export default function App() {
