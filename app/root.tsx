@@ -10,7 +10,9 @@ import {
 import type { MetaFunction, LinksFunction } from "remix";
 
 import styles from "./tailwind.css";
-import { useBG } from "./hooks/useBG";
+import { FixedBG } from "./components/fixedBG";
+import { useState } from "react";
+import { ColorSwatch } from "./components/colorSwatch";
 
 export const meta: MetaFunction = () => {
   return { title: "Anthony Powell" };
@@ -23,18 +25,9 @@ export const links: LinksFunction = () => {
   ];
 };
 
-const FixedBG = () => {
-  const backgroundImage = useBG();
-
-  return (
-    <div
-      className="fixed h-screen w-screen top-0 left-0 -z-10"
-      style={{ backgroundImage }}
-    />
-  );
-};
-
 export default function App() {
+  const [onBGClick, registerClick] = useState<() => void>(() => {});
+
   return (
     <html lang="en" style={{ fontSize: 20, backgroundColor: "#1a263d" }}>
       <head>
@@ -44,7 +37,8 @@ export default function App() {
         <Links />
       </head>
       <body className="h-screen w-screen">
-        <FixedBG />
+        <FixedBG registerClick={registerClick} />
+        <ColorSwatch onClick={onBGClick} />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

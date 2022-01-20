@@ -1,4 +1,5 @@
 import { ExternalAnchor } from "~/components/anchor";
+import { Reader } from "~/components/reader";
 
 export default function Index() {
   return (
@@ -12,13 +13,15 @@ export default function Index() {
         flex-1
       "
     >
-      <section>
+      <section className="relative">
+        <Reader />
         <h1 className="text-2xl font-bold">Anthony Powell</h1>
         <h4 className="text-md font-medium">Software engineer, passionate.</h4>
       </section>
-      <section className="mt-10">
+      <section className="relative mt-10">
+        <Reader />
         <p>
-          Building interfaces and crunching data, at{" "}
+          I am building interfaces and crunching data at{" "}
           <ExternalAnchor
             preload="true"
             href="https://www.netscout.com/arbor-ddos"
@@ -29,7 +32,10 @@ export default function Index() {
         </p>
       </section>
       <div className="h-40 w-full" />
-      <section className="font-bold">Thanks 👋</section>
+      <section className="font-bold relative">
+        <Reader />
+        Thanks 👋
+      </section>
     </main>
   );
 }
