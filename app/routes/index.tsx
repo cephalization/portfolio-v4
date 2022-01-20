@@ -29,7 +29,7 @@ export default function Index() {
         </p>
       </section>
       <div className="h-40 w-full" />
-      <section className="">Thanks 👋</section>
+      <section className="font-bold">Thanks 👋</section>
     </main>
   );
 }
