@@ -13,14 +13,11 @@ export default function Index() {
         flex-1
       "
     >
-      <section className="relative">
+      <section className="relative pb-6">
         <Reader />
         <h1 className="text-2xl font-bold">Anthony Powell</h1>
         <h4 className="text-md font-medium">Software engineer, passionate.</h4>
-      </section>
-      <section className="relative mt-10">
-        <Reader />
-        <p>
+        <p className="mt-10">
           I am building interfaces and crunching data at{" "}
           <ExternalAnchor
             preload="true"
@@ -30,11 +27,6 @@ export default function Index() {
           </ExternalAnchor>
           .
         </p>
-      </section>
-      <div className="h-40 w-full" />
-      <section className="font-bold relative">
-        <Reader />
-        Thanks 👋
       </section>
     </main>
   );

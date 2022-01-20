@@ -22,7 +22,8 @@ export const ColorSwatch = ({ onClick }: ColorSwatchProps) => {
       className="
       fixed z-10 top-2 right-6
       text-slate-300 hover:text-slate-50 focus:text-slate-100
-      transition-colors motion-reduce:transition-none
+      transition-colors motion-reduce:transition-none outline-none
+      hover:animate-pulse focus:animate-pulse motion-reduce:animate-none
       "
     >
       <ColorSwatchIcon className="h-6 w-6" />
