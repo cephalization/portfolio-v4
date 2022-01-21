@@ -13,11 +13,11 @@ export default function Index() {
         flex-1
       "
     >
-      <section className="relative pb-6">
+      <section className="relative pb-6 pr-4">
         <Reader />
         <h1 className="text-2xl font-bold">Anthony Powell</h1>
         <h4 className="text-md font-medium">Software engineer, passionate.</h4>
-        <p className="mt-10">
+        <p className="mt-6">
           I am building interfaces and crunching data at{" "}
           <ExternalAnchor
             preload="true"
@@ -27,6 +27,29 @@ export default function Index() {
           </ExternalAnchor>
           .
         </p>
+      </section>
+      <section className="relative mt-4 pb-6 pr-4">
+        <Reader />
+        <h2 className="text-2xl font-bold">Projects</h2>
+        <h4 className="text-md font-medium">Open source I've authored.</h4>
+        <div className="mt-6">
+          <ExternalAnchor
+            preload="true"
+            href="https://www.github.com/cephalization/megawave"
+          >
+            Megawave
+          </ExternalAnchor>
+          .{" "}
+          <span className="whitespace-pre-line">
+            Self hosted music streaming platform.
+          </span>
+          <ul className="flex flex-wrap gap-4 list-disc list-inside pt-4 ml-4">
+            <li>React.js</li>
+            <li>Tailwind.css</li>
+            <li>Python 3 + Fast API</li>
+            <li>Docker</li>
+          </ul>
+        </div>
       </section>
     </main>
   );
