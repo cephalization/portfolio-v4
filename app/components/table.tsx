@@ -11,7 +11,7 @@ export const Table = ({ rows }: TableProps) => {
         {rows.map(([h, t]) => (
           <tr key={h}>
             <td>{h}</td>
-            <td>{t}</td>
+            <td className="font-light">{t}</td>
           </tr>
         ))}
       </tbody>

@@ -5,9 +5,9 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "remix";
+} from "@remix-run/react";
 
-import type { MetaFunction, LinksFunction } from "remix";
+import type { LinksFunction, MetaFunction } from "@remix-run/node"; // or cloudflare/deno
 
 import styles from "./tailwind.css";
 import { FixedBG } from "./components/fixedBG";

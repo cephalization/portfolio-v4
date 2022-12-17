@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Link, LinkProps } from "remix";
+import { Link, LinkProps } from "@remix-run/react";
 
 import type { HTMLProps } from "react";
 

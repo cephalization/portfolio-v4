@@ -13,7 +13,7 @@ export const Block = ({ header, main, children }: BlockProps) => {
         (main ? (
           <h1 className="text-xl font-bold">{header}</h1>
         ) : (
-          <h4 className="text-md font-medium">{header}</h4>
+          <h4 className="text-lg font-medium">{header}</h4>
         ))}
       {children}
     </section>
