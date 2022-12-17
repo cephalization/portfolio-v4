@@ -16,7 +16,7 @@ export default function Index() {
       "
     >
       <Block main header="Anthony Powell">
-        <h4 className="text-md font-medium">
+        <h4 className="text-md font-medium text-cyan-200">
           Software engineer, frontend passionate.
         </h4>
         <p className="mt-6">
