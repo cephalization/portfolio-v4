@@ -26,7 +26,7 @@ export const ColorSwatch = ({ onClick }: ColorSwatchProps) => {
       hover:animate-pulse focus:animate-pulse motion-reduce:animate-none
       "
     >
-      <ColorSwatchIcon className="h-6 w-6" />
+      <ColorSwatchIcon className="h-4 w-4" />
     </button>
   );
 };

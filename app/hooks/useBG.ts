@@ -7,6 +7,11 @@ const SCALAR = 180;
 const MOD = 180;
 
 export const themes = {
+  blue: `hsl(240deg 59% 14%) 0%,
+  hsl(219deg 40% 17%) 38%,
+  hsl(206deg 36% 21%) 69%,
+  hsl(211deg 37% 28%) 100%
+  `,
   forest: `hsl(270deg 100% 7%) 0%,
   hsl(212deg 100% 13%) 15%,
   hsl(204deg 100% 19%) 29%,
@@ -25,11 +30,6 @@ export const themes = {
   hsl(34deg 100% 53%) 84%,
   hsl(45deg 100% 50%) 91%,
   hsl(55deg 100% 50%) 100%`,
-  blue: `hsl(240deg 59% 14%) 0%,
-  hsl(219deg 40% 17%) 38%,
-  hsl(206deg 36% 21%) 69%,
-  hsl(211deg 37% 28%) 100%
-  `,
   lava: `hsl(315deg 73% 10%) 0%,
   hsl(346deg 83% 31%) 59%,
   hsl(17deg 95% 50%) 75%,

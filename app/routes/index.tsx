@@ -1,5 +1,7 @@
 import { ExternalAnchor } from "~/components/anchor";
-import { Reader } from "~/components/reader";
+import { Block } from "~/components/block";
+import { Table } from "~/components/table";
+import { jobs } from "~/jobs";
 
 export default function Index() {
   return (
@@ -7,28 +9,28 @@ export default function Index() {
       className="
         motion-reduce:transition-none transition-[padding]
         p-12 pt-12 lg:pl-24 lg:pt-32 
-        mx-auto max-w-3xl 
+        max-w-3xl 
         text-blue-200
         text-sm
         flex-1
       "
     >
-      <section className="relative pb-6 pr-4">
-        <Reader />
-        <h1 className="text-2xl font-bold">Anthony Powell</h1>
-        <h4 className="text-md font-medium">Software engineer, passionate.</h4>
+      <Block main header="Anthony Powell">
+        <h4 className="text-md font-medium">
+          Software engineer, frontend passionate.
+        </h4>
         <p className="mt-6">
-          I am building interfaces at{" "}
+          Currently at{" "}
           <ExternalAnchor
             preload="true"
             href="https://www.netscout.com/arbor-ddos"
           >
             Netscout
           </ExternalAnchor>
-          .
+          , building friendlier interfaces.
         </p>
         <p className="mt-2">
-          Hacking on projects on{" "}
+          Hacking on projects with{" "}
           <ExternalAnchor
             preload="true"
             href="https://www.github.com/cephalization"
@@ -38,12 +40,21 @@ export default function Index() {
           .
         </p>
         <p className="mt-2">Making music at Home.</p>
-      </section>
-      <section className="relative mt-4 pb-6 pr-4">
-        <Reader />
-        <h4 className="text-md font-medium">Contact me</h4>
-        <ul>
-          <li className="pl-2 mt-1">
+      </Block>
+      <Block header="Resume">
+        <Table rows={jobs} />
+      </Block>
+      <Block>
+        <ul className="flex gap-2 text-xs">
+          <li className="mt-1">
+            <ExternalAnchor
+              preload="true"
+              href="https://toot.cafe/@cephalization"
+            >
+              Mastodon
+            </ExternalAnchor>
+          </li>
+          <li className="mt-1">
             <ExternalAnchor
               preload="true"
               href="https://twitter.com/Cephalization"
@@ -51,7 +62,7 @@ export default function Index() {
               Twitter
             </ExternalAnchor>
           </li>
-          <li className="pl-2 mt-1">
+          <li className="mt-1">
             <ExternalAnchor
               preload="true"
               href="https://www.linkedin.com/in/anthony-powell-05788696/"
@@ -60,7 +71,7 @@ export default function Index() {
             </ExternalAnchor>
           </li>
         </ul>
-      </section>
+      </Block>
     </main>
   );
 }
