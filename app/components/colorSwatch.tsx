@@ -20,6 +20,7 @@ export const ColorSwatch = ({ onClick }: ColorSwatchProps) => {
       type="button"
       onClick={onClick}
       className="
+      hidden sm:inline-block
       fixed z-10 top-2 right-6
       text-slate-300 hover:text-slate-50 focus:text-slate-100
       transition-colors motion-reduce:transition-none outline-none

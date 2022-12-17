@@ -8,7 +8,7 @@ export default function Index() {
     <main
       className="
         motion-reduce:transition-none transition-[padding]
-        p-12 pt-12 lg:pl-24 lg:pt-32 
+        p-12 pl-4 pr-0 pt-6 sm:pl-24 sm:pt-32 
         max-w-3xl 
         text-blue-200
         text-sm
@@ -41,7 +41,7 @@ export default function Index() {
         </p>
         <p className="mt-2">Making music at Home.</p>
       </Block>
-      <Block header="Resume">
+      <Block header="History">
         <Table rows={jobs} />
       </Block>
       <Block>
