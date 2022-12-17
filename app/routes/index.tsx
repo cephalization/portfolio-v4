@@ -39,9 +39,9 @@ export default function Index() {
           </ExternalAnchor>
           .
         </p>
-        <p className="mt-2">Making music at Home.</p>
+        <p className="mt-2">Making music at home.</p>
       </Block>
-      <Block header="History">
+      <Block header="Résumé">
         <Table rows={jobs} />
       </Block>
       <Block>
