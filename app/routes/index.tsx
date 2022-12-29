@@ -39,7 +39,7 @@ export default function Index() {
           </ExternalAnchor>
           .
         </p>
-        <p className="mt-2">Making music at home.</p>
+        <p className="mt-2">Making music, and music applications.</p>
       </Block>
       <Block header="Résumé">
         <Table rows={jobs} />
@@ -49,7 +49,7 @@ export default function Index() {
           <li className="mt-1">
             <ExternalAnchor
               preload="true"
-              href="https://toot.cafe/@cephalization"
+              href="https://hachyderm.io/@cephalization"
             >
               Mastodon
             </ExternalAnchor>
