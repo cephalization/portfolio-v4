@@ -1,5 +1,6 @@
 export const jobs: [string, string][] = [
-  ["Netscout", "2021 - now"],
+  ["furl", "2023 - now"],
+  ["Netscout", "2021 - 2023"],
   ["Censys", "2020 - 2021"],
   ["Hatch", "2020"],
   ["Ambyint", "2018 - 2020"],

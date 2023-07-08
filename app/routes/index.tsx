@@ -17,17 +17,14 @@ export default function Index() {
     >
       <Block main header="Anthony Powell">
         <h4 className="text-md font-medium text-cyan-200">
-          Software engineer, frontend passionate.
+          Senior Software engineer, frontend passionate.
         </h4>
         <p className="mt-6">
           Currently at{" "}
-          <ExternalAnchor
-            preload="true"
-            href="https://www.netscout.com/arbor-ddos"
-          >
-            Netscout
+          <ExternalAnchor preload="true" href="https://furl.ai">
+            furl ai
           </ExternalAnchor>
-          , building friendlier interfaces.
+          , bridging LLMs with pleasant user experiences.
         </p>
         <p className="mt-2">
           Hacking on projects with{" "}
@@ -49,9 +46,9 @@ export default function Index() {
           <li className="mt-1">
             <ExternalAnchor
               preload="true"
-              href="https://hachyderm.io/@cephalization"
+              href="https://threads.net/@cephalization"
             >
-              Mastodon
+              Threads
             </ExternalAnchor>
           </li>
           <li className="mt-1">
