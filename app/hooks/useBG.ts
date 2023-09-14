@@ -50,7 +50,7 @@ const makeBG = (
 };
 
 export const useBG = (theme?: ThemeValue): string => {
-  const [rotation, setRotation] = useState(0);
+  const [rotation, setRotation] = useState(2);
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia(

@@ -46,6 +46,14 @@ export default function Index() {
           <li className="mt-1">
             <ExternalAnchor
               preload="true"
+              href="https://bsky.app/profile/anthonypowell.me"
+            >
+              Bluesky
+            </ExternalAnchor>
+          </li>
+          <li className="mt-1">
+            <ExternalAnchor
+              preload="true"
               href="https://threads.net/@cephalization"
             >
               Threads
