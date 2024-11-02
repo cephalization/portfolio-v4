@@ -21,8 +21,8 @@ export default function Index() {
         </h4>
         <p className="mt-6">
           Currently at{" "}
-          <ExternalAnchor preload="true" href="https://furl.ai">
-            furl ai
+          <ExternalAnchor preload="true" href="https://arize.com">
+            Arize AI
           </ExternalAnchor>
           , bridging LLMs with pleasant user experiences.
         </p>
@@ -38,11 +38,19 @@ export default function Index() {
         </p>
         <p className="mt-2">Making music, and music applications.</p>
       </Block>
-      <Block header="Résumé">
+      <Block header="Experience">
         <Table rows={jobs} />
       </Block>
       <Block>
         <ul className="flex gap-2 text-xs">
+          <li className="mt-1">
+            <ExternalAnchor
+              preload="true"
+              href="https://www.linkedin.com/in/anthony-powell-05788696/"
+            >
+              LinkedIn
+            </ExternalAnchor>
+          </li>
           <li className="mt-1">
             <ExternalAnchor
               preload="true"
@@ -54,25 +62,9 @@ export default function Index() {
           <li className="mt-1">
             <ExternalAnchor
               preload="true"
-              href="https://threads.net/@cephalization"
-            >
-              Threads
-            </ExternalAnchor>
-          </li>
-          <li className="mt-1">
-            <ExternalAnchor
-              preload="true"
               href="https://twitter.com/Cephalization"
             >
               Twitter
-            </ExternalAnchor>
-          </li>
-          <li className="mt-1">
-            <ExternalAnchor
-              preload="true"
-              href="https://www.linkedin.com/in/anthony-powell-05788696/"
-            >
-              LinkedIn
             </ExternalAnchor>
           </li>
         </ul>
